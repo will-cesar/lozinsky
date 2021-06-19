@@ -17,16 +17,14 @@
     "url": "https://github.com/will-cesar/lozinsky/issues"
   },
   "homepage": "https://github.com/will-cesar/lozinsky#readme",
-  "dependencies": {
+  "devDependencies": {
     "browser-sync": "^2.26.14",
     "cssnano": "^5.0.6",
+    "gulp": "^4.0.2",
     "gulp-postcss": "^9.0.0",
     "gulp-sass": "^4.1.0",
     "gulp-terser": "^2.0.1",
+    "netlify-cli": "^3.37.37",
     "postcss": "^8.3.5"
-  },
-  "devDependencies": {
-    "gulp": "^4.0.2",
-    "netlify-cli": "^3.37.37"
   }
 }
