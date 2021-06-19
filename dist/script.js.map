@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"script.js"}
+{"version":3,"sources":["script.js"],"names":["clickBtnMobile","btn","document","getElementsByClassName","classList","contains","remove","add","openMenuMobile","menu"],"mappings":"AAAA,SAASA,iBACL,MAAMC,EAAMC,SAASC,uBAAuB,iBAAiB,GAEzDF,EAAIG,UAAUC,SAAS,yBACvBJ,EAAIG,UAAUE,OAAO,yBAGrBL,EAAIG,UAAUG,IAAI,yBAGtBC,iBAGJ,SAASA,iBACL,MAAMC,EAAOP,SAASC,uBAAuB,QAAQ,GAEjDM,EAAKL,UAAUC,SAAS,gBACxBI,EAAKL,UAAUE,OAAO,gBAGtBG,EAAKL,UAAUG,IAAI","file":"script.js"}

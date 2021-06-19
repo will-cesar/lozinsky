@@ -1,0 +1,138 @@
+@import '../variables.scss';
+
+.section1 {
+    display: block;
+    margin-top: 85px;
+    min-height: calc(100vh - 85px);
+    position: relative;
+
+    &__img-left {
+        left: 0;
+        max-height: calc(100vh - 85px);
+        position: absolute;
+        top: 0;
+        width: auto;
+        z-index: 0;
+    }
+
+    &__img-right {
+        position: absolute;
+        right: 0;
+        top: -90px;
+        z-index: 0;
+    }
+
+    &__head {
+        display: block;
+        margin: 0 auto;
+        padding-top: 20px;
+        position: relative;
+        text-align: center;
+    }
+
+    &__title {
+        color: $color-black-second;
+        font-size: 14px;
+        font-weight: 700;
+        margin-bottom: 6px;
+        text-transform: uppercase;
+    }
+
+    &__title-bar {
+        background-color: $color-green-second;
+        display: block;
+        height: 1px;
+        margin: 0 auto;
+        position: relative;
+        width: 60px;
+    }
+
+    &__content {
+        text-align: center;
+    }
+
+    &__text {
+        font-size: 26px;
+        font-weight: 400;
+        margin: 0;
+    }
+
+    &__text-highlight {
+        color: $color-green-primary;
+        font-size: 36px;
+        font-weight: 400;
+    }
+}
+
+.bar {
+    align-items: center;
+    display: flex;
+
+    &__left, &__right {
+        background-color: $color-green-primary;
+        display: block;
+        height: 1px;
+        position: relative;
+        width: 80px;
+    }
+
+    &__circle {
+        height: 20px;
+        position: relative;
+        width: 20px;
+
+        &::after {
+            background-color: #86bf5a;
+            border-radius: 50%;
+            content: "";
+            display: block;
+            height: 20px;
+            left: 0px;
+            position: absolute;
+            top: 0px;
+            width: 20px;
+            z-index: 2;
+        }
+
+        &::before {
+            background-color: #fff;
+            content: "";
+            height: 35px;
+            left: 5px;
+            position: absolute;
+            top: -8px;
+            width: 10px;
+            z-index: 1;
+        }
+    }
+
+    &__left {
+        margin-right: 4px;
+
+        &::after {
+            border: 1px solid $color-green-primary;
+            border-radius: 50%;
+            bottom: -13px;
+            content: "";
+            height: 26px;
+            position: absolute;
+            right: -28px;
+            width: 26px;
+        }
+    }
+
+    &__right {
+        margin-left: 4px;
+
+        &::after {
+            border: 1px solid $color-green-primary;
+            border-radius: 50%;
+            bottom: -13px;
+            content: "";
+            height: 26px;
+            position: absolute;
+            left: -28px;
+            width: 26px;
+        }
+    }
+}

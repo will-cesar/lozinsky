@@ -1,0 +1,114 @@
+@import '../variables.scss';
+
+.header {
+    align-items: center;
+    background-color: $color-white-primary;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgba(53, 50, 51, 0.5);
+    display: flex;
+    justify-content: space-between;
+    left: 0;
+    padding: 18px 22px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+
+    @media (min-width: 992px) {
+        justify-content: center;
+    }
+
+    &__logo {
+        display: block;
+        height: auto;
+        max-width: 200px;
+        width: 100%;
+    }
+}
+
+.menu {
+    display: none;
+    margin: 0 50px;
+    transform: .3s;
+
+    @media (min-width: 992px) {
+        display: block;
+    }
+
+    &__content {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__item {
+        margin: 0 8px;
+        text-align: center;
+    }
+
+    &__link {
+        color: $color-black-primary;
+        font-size: 12px;
+        font-weight: 300;
+        text-decoration: none;
+    }
+
+    &--active {
+        @media (max-width: 991.98px) {
+            display: block;
+            left: 0;
+            margin: 0;
+            position: absolute;
+            top: 85px;
+            width: 100%;
+    
+            .menu__content {
+                display: block;
+            }
+    
+            .menu__item {
+                margin: 26px 8px;
+            }
+    
+            .menu__link {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+.button-mobile {
+    cursor: pointer;
+    display: block;
+    position: relative;
+
+    @media (min-width: 992px) {
+        display: none;
+    }
+
+    &__bars {
+        background-color: $color-gray-primary;
+        display: block;
+        height: 2px;
+        margin: 4px 0;
+        position: relative;
+        transition: .3s;
+        width: 30px;
+    }
+
+    &--active {
+        .bar1 {
+            transform: rotate(45deg);
+            top: 3px; 
+        }
+
+        .bar2 {
+            display: none;
+        }
+
+        .bar3 {
+            transform: rotate(-45deg);
+            bottom: 3px;
+        }
+    }
+}

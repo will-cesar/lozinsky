@@ -18,3 +18,9 @@
 - npm i - rodar uma vez para instalar os pacotes necessários
 - npm run dev - comando para rodar o projeto
 ```
+
+### Link em produção ###
+
+```
+- https://lozinsky.netlify.app/
+```
