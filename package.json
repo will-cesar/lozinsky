@@ -1,0 +1,31 @@
+{
+  "name": "lozinsky",
+  "version": "1.0.0",
+  "description": "Repositório referente ao site Lozinsky - Início - 18/06/2021",
+  "main": "index.js",
+  "scripts": {
+    "dev": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/will-cesar/lozinsky.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/will-cesar/lozinsky/issues"
+  },
+  "homepage": "https://github.com/will-cesar/lozinsky#readme",
+  "dependencies": {
+    "browser-sync": "^2.26.14",
+    "cssnano": "^5.0.6",
+    "gulp-postcss": "^9.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-terser": "^2.0.1",
+    "postcss": "^8.3.5"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
