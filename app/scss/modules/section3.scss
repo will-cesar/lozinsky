@@ -1,0 +1,75 @@
+@import '../variables.scss';
+
+.section3 {
+    position: relative;
+
+    &__content {
+        align-items: center;
+        display: flex;
+        margin: 0 50px 0 auto;
+        max-width: 955px;
+        position: relative;
+
+        @media (max-width: 991.98px) {
+            display: block;
+            max-width: inherit;
+            margin: 0 auto;
+        }
+    }
+
+    &__text {
+        font-size: 26px;
+        font-weight: 400;
+        line-height: 36px;
+        padding: 0 20px;
+
+        @media (max-width: 991.98px) {
+            margin: 25px 0;
+        }
+
+        @media (min-width: 992px) {
+            font-size: 30px;
+            margin-right: 110px;
+            padding: 0;
+            text-align: right;
+        }
+    }
+
+    &__img-center {
+        max-width: 100%;
+        width: auto;
+        z-index: 2;
+
+        @media (max-width: 991.98px) {
+            display: block;
+            margin: 30px auto 0;
+            max-width: 100%;
+            width: auto;
+        }
+    }
+
+    &__img-left-triangle {
+        position: absolute;
+        right: 510px;
+        z-index: 3;
+
+        @media (max-width: 991.98px) {
+            display: none;
+        }
+    }
+
+    &__img-right {
+        bottom: -80px;
+        position: absolute;
+        right: 0;
+        z-index: 1;
+
+        @media (max-width: 991.98px) {
+            display: none;
+        }
+    }
+
+    &__highlight {
+        color: $color-green-second;
+    }
+}

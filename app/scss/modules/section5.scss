@@ -1,0 +1,49 @@
+@import '../variables.scss';
+
+.section5 {
+    align-items: center;
+    background-color: $color-green-third;
+    display: flex;
+    min-height: 350px;
+    position: relative;
+
+    @media (min-width: 768px) and (max-width: 991.98px) {
+        min-height: 445px;
+    }
+
+    &__art-left {
+        bottom: 0;
+        left: 0;
+        position: absolute;
+
+        @media (max-width: 767.98px) {
+            display: none;
+        }
+    }
+
+    &__text {
+        color: $color-white-primary;
+        display: block;
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 34px;
+        margin: 0 auto;
+        max-width: 700px;
+        padding: 0 20px;
+        text-align: center;
+
+        @media (min-width: 768px) and (max-width: 991.98px) {
+            max-width: 470px;
+        }
+    }
+
+    &__art-right {
+        position: absolute;
+        right: 0;
+        top: 0;
+
+        @media (max-width: 767.98px) {
+            display: none;
+        }
+    }
+}

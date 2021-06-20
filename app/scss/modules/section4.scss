@@ -1,0 +1,118 @@
+@import '../variables.scss';
+
+.section4 {
+    position: relative;
+
+    @media (min-width: 992px) {
+        min-height: 825px;
+    }
+    
+    &__background {
+        background-image: url('/img/sunrise-over-planet-earth-in-space-3d-rendering-1.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 450px;        
+        position: relative;
+        width: 100%;
+
+        @media (min-width: 992px) {
+            position: absolute;
+            top: -65px;
+        }
+    }
+
+    &__text {
+        color: $color-white-primary;
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 34px;
+        padding-top: 65px;
+        text-align: center;
+    }
+
+    &__img-art-left {
+        bottom: -60px;
+        left: 0;
+        position: absolute;
+
+        @media (max-width: 991.98px) {
+            display: none;
+        }
+    }
+
+    &__content {
+        align-items: center;
+        display: block;
+        left: 50%;
+        margin: 0 auto;
+        max-width: 1000px;
+        position: relative;
+        transform: translateX(-50%);
+        top: -200px;
+        width: 100%;
+
+        @media (max-width: 767.98px) {
+            top: -145px;
+        }
+
+        @media (min-width: 992px) {
+            display: flex;
+            position: absolute;
+            top: 250px;
+        }
+
+        @media (min-width: 992px) and (max-width: 1199.98px) {
+            max-width: 900px;
+        }
+    }
+
+    &__img-face {
+        @media (max-width: 991.98px) {
+            display: block;
+            margin: 0 auto;
+            max-width: 300px;
+            position: relative;
+            width: auto;
+        }
+
+        @media (min-width: 768px) and (max-width: 991.98px) {
+            max-width: 100%;
+        }
+    }
+
+    &__img-right-triangle {
+        left: 375px;
+        position: absolute;
+
+        @media (max-width: 991.98px) {
+            display: none;
+        }
+    }
+
+    &__text2 {
+        position: relative;
+
+        @media (max-width: 991.98px) {
+            padding: 0 20px;
+        }
+
+        @media (min-width: 992px) {
+            left: 35px;            
+            top: 40px;
+        }
+
+        @media (min-width: 1200px) {
+            min-width: 485px;
+        }
+    }
+
+    &__text2-p {
+        font-size: 28px;
+        line-height: 34px;
+        margin: 20px 0;
+    }
+
+    &__highlight {
+        color: $color-blue-primary;        
+    }
+}
