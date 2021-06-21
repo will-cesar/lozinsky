@@ -241,4 +241,24 @@
         margin-bottom: 4px;
         text-transform: uppercase;
     }
+
+    &__img {
+        animation: upDown 2s infinite;
+        position: relative;
+        top: 0px;
+    }
+}
+
+@keyframes upDown {
+    0% {
+        top: 0px;
+    }
+
+    50% {
+        top: 10px;
+    }
+  
+    100% {
+        top: 0px;
+    }
 }

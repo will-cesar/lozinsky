@@ -21,3 +21,12 @@ function openMenuMobile() {
         menu.classList.add('menu--active');
     }
 }
+
+function btnScroll() {
+    const offsetTop = document.getElementById('section1').offsetTop;
+
+    scroll({
+        top: offsetTop + 380,
+        behavior: "smooth"
+    });
+}
