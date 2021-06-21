@@ -1,5 +1,3 @@
-@import '../variables.scss';
-
 .header {
     align-items: center;
     background-color: $color-white-primary;
@@ -51,6 +49,11 @@
         font-size: 12px;
         font-weight: 300;
         text-decoration: none;
+        transition: .3s;
+
+        &:hover {
+            text-decoration: underline;
+        }
     }
 
     &--active {

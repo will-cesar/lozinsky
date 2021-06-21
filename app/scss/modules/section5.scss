@@ -1,5 +1,3 @@
-@import '../variables.scss';
-
 .section5 {
     align-items: center;
     background-color: $color-green-third;
@@ -12,9 +10,10 @@
     }
 
     &__art-left {
-        bottom: 0;
+        bottom: -75px;
         left: 0;
         position: absolute;
+        z-index: 1;
 
         @media (max-width: 767.98px) {
             display: none;
